@@ -58,14 +58,15 @@ DNS2: 46.101.91.123 (DreamPi DNS as backup)
 ```
 
 5. After connecting, you should be able to see your Dreamcast Now session. If there is no activity for 1 minute, the session will be terminated. The monitoring cycle is terminated and the monitoring cycle restarts.
-
+   
+  <br>  
+  
 Go ahead and try it!
 
   <br>  
-Classic BBA Mode, which connects the BBA to the RPI's RJ45 port and uses it as a Wi-Fi station, will continue to function in its original location.
 
-Command-line service validation  
-Practical commands:  
+Command-line service validation
+Practical commands:
 ```
 journalctl -u remote_bba_mode.service -f (Service execution information)
 sudo systemctl status remote_bba_mode.service (Service status)
@@ -73,3 +74,7 @@ sudo systemctl stop remote_bba_mode.service (Stop the service)
 sudo systemctl restart remote_bba_mode.service (Restart the service)
 tail -f /var/log/syslog (General system log)
 ```
+
+
+  <br>  
+Classic BBA Mode, which connects the BBA to the RPI's RJ45 port and uses it as a Wi-Fi station, will continue to function in its original location.
