@@ -126,6 +126,7 @@ def monitor_dns_activity():
             for ip in dns_sources:
                 if ip != active_ip:
                     active_ip = ip
+                    last_traffic_time = now
                     logger.info("DNS query detected from %s. Starting Dreamcast Now session." % ip)
                     try:
                         session = DreamcastNowService()
