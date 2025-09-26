@@ -114,6 +114,11 @@ def monitor_dns_activity():
             if dns_rule_applied:
                 cleanup_iptables_logging()
                 dns_rule_applied = False
+            if active_ip:
+                session.go_offline()
+                session_closed = True
+                active_ip = None
+                session = None
             time.sleep(CHECK_INTERVAL*2)
             continue
         elif not dns_rule_applied:
