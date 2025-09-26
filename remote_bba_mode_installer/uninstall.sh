@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# Remote BBA Mode tool written by scrivanidc@gmail.com - sep/2025
+# ---------------------------------------------------------------
+# We are living our best Dreamcast Lives
+# ---------------------------------------------------------------
+
 echo "Uninstalling Remote BBA Monitor..."
 
 # Stop and disable service

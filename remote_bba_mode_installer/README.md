@@ -1,4 +1,7 @@
-# Remote BBA Monitor for Dreamcast
+# Remote BBA Mode for Dreamcast
+
+Description:
+Remote BBA_Mode: Dreamcast uses RPI as Gateway and DNS Server to trigger DCNOW
 
 This project monitors DNS traffic from a Dreamcast console using Raspberry Pi and triggers Dreamcast Now sessions automatically.
 
@@ -24,3 +27,4 @@ sudo ./install.sh
 ```bash
 sudo ./uninstall.sh
 ```
+

@@ -8,6 +8,11 @@ import logging
 import logging.handlers
 from dcnow import DreamcastNowService
 
+# Remote BBA Mode tool written by scrivanidc@gmail.com - sep/2025
+# ---------------------------------------------------------------
+# We are living our best Dreamcast Lives
+# ---------------------------------------------------------------
+
 DNS_PORT = 53
 LOG_FILE = "/var/log/iptables.log"
 CHECK_INTERVAL = 5
