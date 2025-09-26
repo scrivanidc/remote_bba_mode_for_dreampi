@@ -1,0 +1,21 @@
+# Remote BBA Monitor for Dreamcast
+
+This project monitors DNS traffic from a Dreamcast console using Raspberry Pi and triggers Dreamcast Now sessions automatically.
+
+## Features
+
+- Detects Dreamcast DNS queries via iptables logging
+- Starts and stops Dreamcast Now sessions based on traffic
+- Automatically disables monitoring if `dreampi.service` is active
+- Logs DNS and Dreamcast traffic to `/var/log/iptables.log`
+- Integrated with `systemd` and `rsyslog`
+
+## Installation
+
+```bash
+sudo ./install.sh
+
+## Uninstallation
+
+```bash
+sudo ./uninstall.sh

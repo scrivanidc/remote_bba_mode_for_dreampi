@@ -1,0 +1,14 @@
+[Unit]
+Description=Dreamcast DNS monitoring via RPI to trigger DCNOW
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/dreampi/remote_bba_mode.py
+WorkingDirectory=/home/pi/dreampi/
+Restart=always
+SyslogIdentifier=bba_mode
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
