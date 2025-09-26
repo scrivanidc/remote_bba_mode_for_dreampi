@@ -11,11 +11,7 @@ This project monitors DNS traffic from a Dreamcast console using Raspberry Pi an
 - Integrated with `systemd` and `rsyslog`
 
 ## Installation
-
-```bash
 sudo ./install.sh
 
 ## Uninstallation
-
-```bash
 sudo ./uninstall.sh
