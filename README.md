@@ -14,9 +14,9 @@ This project monitors DNS traffic from a Dreamcast console using Raspberry Pi an
 wget https://github.com/scrivanidc/remote_bba_mode_for_dreampi/raw/main/remote_bba_mode_installer.zip
 
 ## Installation
-chmod +x install.sh 
+unzip remote_bba_mode_installer.zip
+cd remote_bba_mode_installer
 sudo ./install.sh
 
 ## Uninstallation
-chmod +x uninstall.sh
 sudo ./uninstall.sh
